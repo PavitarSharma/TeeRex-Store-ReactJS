@@ -1,0 +1,146 @@
+/* .product-listing {
+  display: flex;
+  margin-top: 10vh;
+  height: 35rem;
+} */
+
+.search {
+  position: fixed;
+  top: 0;
+}
+
+.filter-desktop {
+  display: none !important;
+}
+
+.filter-mobile {
+  display: block !important;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 5rem;
+  padding-right: 0;
+  background: #eeeeee;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  z-index: 5;
+  position: sticky;
+  top: 0;
+  height: 80px;
+
+}
+
+.header-title {
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 600;
+}
+.header-actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+}
+.line {
+  height: 1.75px;
+  background: black;
+  width: 3.5rem;
+  margin-top: 5px;
+}
+#shoppingButton {
+  color: black;
+  padding: 0.5rem;
+  background-color: rgb(193, 198, 198);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.hidden {
+  display: none !important;
+}
+.image-container {
+  max-height: 8rem;
+  max-width: 6rem;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 2rem;
+  
+}
+
+.search-input {
+  width: 250px;
+  height: 40px;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  font-size: 16px;
+  padding: 0 10px;
+  outline: 0;
+}
+
+.search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  height: 40px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.product-desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hidden {
+    display: block !important;
+  }
+
+  .search-input {
+    width: 400px;
+    height: 40px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    font-size: 16px;
+    padding: 0 10px;
+    outline: 0;
+  }
+  
+  .filter-desktop {
+    display: block !important;
+    width: 300px;
+    height: 800px;
+    padding: 1rem;
+  }
+
+  .filter-mobile {
+    display: none !important;
+  }
+
+  /* .product-desktop {
+    width: 85%;
+    position: relative;
+    left: 6rem;
+    top: 2rem;
+  } */
+}
